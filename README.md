@@ -52,7 +52,7 @@ Refer : https://www.microfocus.com/documentation/fortify-static-code-analyzer-an
 (B) Acunetix 是專門針對網站和網頁應用程式的弱點掃描工具，能夠檢測網站常見的安全漏洞。\
 (D) Nmap 雖然主要用於網絡設備的掃描和端口發現，但它可以協助發現網絡設備的潛在弱點，適用於網絡設備的弱點評估​。
 
-Refer :　https://www.datamation.com/security/nessus-vs-nmap
+Refer : https://www.datamation.com/security/nessus-vs-nmap
 
 因此，(C) 只是因為錯誤描述 Fortify SCA 的用途，將其誤認為是「動態」分析工具，這是與實際不符的。
 ```diff
