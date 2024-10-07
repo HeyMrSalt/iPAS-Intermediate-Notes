@@ -1,4 +1,4 @@
-# iPAS資安工程師中級 | 防護實務衝刺班 | 證照筆記 | Ver.20241007
+# iPAS資安工程師中級 | 防護實務衝刺班 | 證照筆記 | Ver.20241007 [![Hits](https://hits.sh/github.com/heymrslat/ipas-intermediate-notes.svg)](https://hits.sh/github.com/heymrslat/ipas-intermediate-notes/)
 > 此 repository 為 iPAS 資安工程師 中級證照筆記。\
 > 範圍將著重在【防護實務】並以【歷屆難題與解析】與【名詞工具重點說明】方式呈現。
 
@@ -22,7 +22,7 @@
 > 希望本篇能對正在學習資安的你有重點整理之幫助
 > **最後祝大家順利通關取得證照 !!!**
 
-[![Hits](https://hits.sh/github.com/heymrslat/ipas-intermediate-notes.svg)](https://hits.sh/github.com/heymrslat/ipas-intermediate-notes/)
+
 
 ---
 
@@ -48,6 +48,17 @@
 - [【113-1 中級 防護實務】](#113-1-中級-防護實務)
 
 ## 113-2 中級 防護實務
+
+<details> 
+  <summary>Q5.【題組】 依據公司高層的要求，工程師正評 估採用「弱點評估」工具來評估公司內部潛在的弱點項目，試問 下列有關「弱點評估」之敘述，下列何者「有誤」？</summary>
+
+  123\
+
+  456\
+
+  ---
+
+</details> 
 
 【題組 1】情境如附圖所示
 ```
