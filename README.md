@@ -22,6 +22,8 @@
 > 希望本篇能對正在學習資安的你有重點整理之幫助
 > **最後祝大家順利通關取得證照 !!!**
 
+[![Hits](https://hits.sh/github.com/heymrslat/ipas-intermediate-notes.svg)](https://hits.sh/github.com/heymrslat/ipas-intermediate-notes/)
+
 ---
 
 ```diff
