@@ -38,7 +38,7 @@
   - [【SIEM vs IDS】](#siem-vs-ids)
   - [【APT 名詞說明 以及 常用技術手法】](#apt-名詞說明-以及-常用技術手法)
   - [【OWASP Top 10 的詳細解釋】](#owasp-top-10-的詳細解釋)
-  - [【DDoS攻擊種類之對應OSI層級】](##ddos攻擊種類之對應osi層級) 
+  - [【DDoS攻擊種類之對應OSI層級】](#ddos攻擊種類之對應osi層級) 
 - [【Refer】](#refer)
 
 ---
