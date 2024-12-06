@@ -38,6 +38,7 @@
   - [【SIEM vs IDS】](#siem-vs-ids)
   - [【APT 名詞說明 以及 常用技術手法】](#apt-名詞說明-以及-常用技術手法)
   - [【OWASP Top 10 的詳細解釋】](#owasp-top-10-的詳細解釋)
+  - [【DDoS攻擊種類之對應OSI層級】](##ddos攻擊種類之對應osi層級) 
 - [【Refer】](#refer)
 
 ---
@@ -416,6 +417,53 @@ Protect 功能的目的是開發和實施適當的保障措施,以確保關鍵�
 
 ---
 
+## DDoS攻擊種類之對應OSI層級
+
+| OSI 層級               | 攻擊類型                        | 攻擊描述                          | 攻擊方式      |
+|------------------------|----------------------------------|-----------------------------------|--------------|
+| **Application Layer <br>應用層 Layer7** | DNS Flooding/DNS NXDOMAIN Flood<br> (DNS 洪水攻擊) | 利用大量無效的 DNS 查詢造成網絡過載       | 佔頻寬      |
+|                        | DNS 放大/反射攻擊 |        | 佔頻寬      |
+|                        | SNMP 放大/反射攻擊 |        | 佔頻寬      |
+|                        | NTP 放大/反射攻擊 |        | 佔頻寬      |
+|                        |        |        |        |
+|                        | CC Attack (CC 攻擊)            | 通過大量的請求，使目標無法處理，導致服務拒絕 | 消資源      |
+|                        | Slow Attacks (緩慢攻擊)         | 利用緩慢請求來耗盡目標的資源              | 消資源      |
+|                        | HTTP(s) Flood (HTTP 洪水攻擊)      | 通過大量 HTTP(s) 請求造成網絡服務器過載      | 消資源      |
+|                        | POST/GET 大量請求攻擊     | 通過大量 POST/GET 請求造成網絡服務器過載      | 消資源      |
+|                        | ReDoS <br>(Regular Expression Denial of Service)      | 通過設計特定正則表達式匹配負載使目標 CPU 過度消耗   | 消資源      |
+|                        |        |        |        |
+| **Presentation Layer <br>表示層 Layer6** | TLS Attacks (Incomplete TLS Session) <br>(TLS 層攻擊 - 不完整 TLS 會話) | 利用不完整的 TLS 會話來消耗目標資源       | 消資源      |
+|                        |        |        |        |
+| **Session Layer <br>會話層 Layer5**     |        |        |       |
+|                        |        |        |        |
+| **Transport Layer <br>傳輸層 Layer4**   | Ack Flood (ACK 洪水攻擊)       | 發送大量的 ACK 包來填滿目標的帶寬或資源    | 佔頻寬      |
+|                        | SYN Flood Attack (SYN 洪水攻擊) | 透過 SYN 請求過載目標的連接處理系統        | 佔頻寬      |
+|                        | UDP Flood Attack (UDP 洪水攻擊) | 利用 UDP 包造成大量流量，淹沒目標網絡       | 佔頻寬      |
+|                        | TCP連接洪水攻擊  |     | 佔頻寬      |
+|                        | PSH+ACK 洪水攻擊  |     | 佔頻寬      |
+|                        | Ack Flood - Reflection Attack <br>(ACK 洪水攻擊-反射攻擊)       |      | 佔頻寬      |
+|                        | RST 洪水攻擊  |     | 佔頻寬      |
+|                        | SSL 洪水攻擊  |     | 佔頻寬      |
+|                        | Fraggle Attack (Fraggle 攻擊)  | 基於 UDP 的拒絕服務攻擊，利用廣播放大流量   | 佔頻寬      |
+|                        |        |        |        |
+|                        | Sockstress 攻擊  |     | 消資源      |
+|                        | THC SSL DOS 攻擊  |     | 消資源      |
+|                        |        |        |        |
+| **Network Layer <br>網絡層 Layer3**     | Smurf Attack (ICMP) (Smurf 攻擊 - ICMP) | 利用 ICMP 請求放大攻擊流量               | 佔頻寬      |
+|                        | ICMP Flood Attack (ICMP 洪水攻擊) | 發送大量 ICMP 請求使目標網絡過載          | 佔頻寬      |
+|                        | IGMP 洪水攻擊 直接攻擊 |       | 佔頻寬      |
+|                        |        |        |        |
+|                        | Ping of Death (ICMP) (Ping of Death - ICMP) | 發送異常大且不合規的 Ping 請求使系統崩潰   | 消資源      |
+|                        |        |        |        |
+| **Data Link Layer <br>資料連接層 Layer2** | MAC Flooding Attack (MAC 洪水攻擊) | 發送大量的 MAC 地址請求，消耗交換機資源    | 消資源      |
+|                        |        |        |        |
+| **Physical Layer <br>物理層 Layer1**    |        |        |        |
+
+*Resource Exhaustion 資源耗竭 : 指攻擊目標的計算或處理能力，使系統過載<br>
+*Bandwidth Exhaustion 頻寬耗竭 : 指透過大量流量填滿目標帶寬，使其無法正常運行
+
+---
+
 ---
 
 ---
@@ -425,8 +473,9 @@ Protect 功能的目的是開發和實施適當的保障措施,以確保關鍵�
 > 參考來源與致敬
 
 1. [iPas-詳解表-1120805](https://docs.google.com/spreadsheets/d/1Nj3shzjCJZBqBOhLjRVV2iIYokPLWThtbadLJT9izfE/edit?gid=0#gid=0) 
-2. [iPAS資安證照討論區 Q&A - @hiiii](https://hackmd.io/@hiiii/ryOzgaf0a?utm_source=preview-mode&utm_medium=rec#Q1-%E6%88%91%E8%A9%B2%E5%9C%A8%E5%93%AA%E8%A3%A1%E4%B8%8B%E8%BC%89%E8%80%83%E5%8F%A4%E9%A1%8C%EF%BC%9F)
+2. [iPAS資安證照討論區 Q&A - @hiiii](https://hackmd.io/@hiiii/ryOzgaf0a)
 3. [iPAS資訊安全工程師中級筆記 - @dkri3c1](https://hackmd.io/@dkri3c1/r1jWTXCtA)
-4. [iPAS資訊安全工程師中級筆記 - @Not](https://hackmd.io/@Not/iPASInformationSecuritySpecialist#2024%E5%B9%B4-113-1%E4%B8%AD%E7%B4%9A%E8%80%83%E9%A1%8C%E8%A7%A3%E9%A1%8C)
+4. [iPAS資訊安全工程師中級筆記 - @Not](https://hackmd.io/@Not/iPASInformationSecuritySpecialist)
+5. [iPAS資訊安全工程師-中級-12天準備歷程記錄&考古題資源提供 - @Bad Mind](https://hackmd.io/@7ZcmfE2ETz-ntel2Ma6uTg/ByhWE-qs2)
 
 ---
