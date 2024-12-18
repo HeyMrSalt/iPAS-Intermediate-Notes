@@ -34,6 +34,7 @@
 </br>
 
 # 目錄 TOC
+- [【官方資訊】](#官方資訊)
 - [【歷屆難題與解析】](#歷屆難題與解析)
   - [【113-2 中級 防護實務】](#113-2-中級-防護實務)
   - [【113-1 中級 防護實務】](#113-1-中級-防護實務)
@@ -43,6 +44,58 @@
   - [【OWASP Top 10 的詳細解釋】](#owasp-top-10-的詳細解釋)
   - [【DDoS攻擊種類之對應OSI層級】](#ddos攻擊種類之對應osi層級) 
 - [【Refer】](#refer)
+
+---
+</br>
+
+# 官方資訊
+
+## 鑑定制度與評鑑內容
+
+### 鑑定制度架構
+
+[Fig.Appraisal_System_Structure]
+
+懶人包 : 兩個都要70分才有證照，若一科過一科沒過，下次可只考沒過的那科 (限三年內)
+
+### 評鑑內容
+
+[Fig.Specialist_Examination_Evaluation]
+
+懶人包 : 
+- 弱點、威脅分類與攻擊手法(20%) 
+- 防護與應變實務(30%) 
+- 安全維運(20%)
+- 滲透測試、源碼測試、資安健診(30%)
+
+Refer : https://www.ipas.org.tw/ise/AbilityPageContent.aspx?mnuno=675cfae7-387b-4a6d-a4b8-f15a78bb10d4&pgeno=092c80f2-3f12-495b-b8d5-75feb46bd3c8
+
+</br>
+
+## 證書效期與換發
+
+### 證書效期
+
+初級證書：永久有效，不需換發
+中級證書：有效期限為5年，需於證書有效期限屆滿3個月前申請換發
+
+### 證書換發
+> 2擇1
+
+(1) 每5年內須接受資訊安全相關訓練，合計時數48小時以上
+(2) 從事資訊安全相關工作，取得證書後每一年工作年資得抵訓練時數8小時
+
+Refer : https://www.ipas.org.tw/ise/AbilityPageContent.aspx?mnuno=25150af2-dbc4-45e3-876e-a7214304168a&pgeno=007ad965-30c4-427a-a261-369b0c53d9dc
+
+</br>
+
+## 數發部-資通安全專業證照清單
+
+[Fig.Certificate_Certification_List]
+
+資通安全專業證照清單（1131106修正）
+
+Refer : https://moda.gov.tw/ACS/laws/certificates/676
 
 ---
 </br>
